@@ -3,18 +3,23 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "itl-ui:build": "ng build --project=itl-ui",
+    "preitl-ui:pack": "npm run itl-ui:build",
+    "itl-ui:pack": "npm pack ./dist/itl-ui",
+    "its-shell:start": "ng serve --project=its-shell",
+    "its-shell:build": "ng build --project=its-shell",
+    "its-shell:test": "ng test --project=its-shell",
+    "watch": "ng build --watch --configuration development"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.0.0",
+    "@angular/cdk": "^16.0.3",
     "@angular/common": "^16.0.0",
     "@angular/compiler": "^16.0.0",
     "@angular/core": "^16.0.0",
     "@angular/forms": "^16.0.0",
+    "@angular/material": "^16.0.3",
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
@@ -33,6 +38,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^16.0.0",
     "typescript": "~5.0.2"
   }
 }

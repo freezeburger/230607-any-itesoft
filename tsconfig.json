@@ -8,6 +8,19 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "paths": {
+      "@itesoft/itl-patterns": [
+        "projects/itl-patterns/src/public-api",
+        "dist/itl-patterns"
+      ],
+      "itl-types": [
+        "dist/itl-types"
+      ],
+      "@itesoft/itl-ui": [
+        "projects/itl-ui/src/public-api",
+        "dist/itl-ui"
+      ]
+    },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
